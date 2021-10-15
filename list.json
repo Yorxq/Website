@@ -5,14 +5,16 @@
       "link": "https://www.yorick.ml/notes/",
       "image": "images/...",
       "description": "Create and save notes with iOS Notes",
-      "author_avatar": "images/MissTheRage.png"
+      "author_avatar": "images/MissTheRage.png",
+      "author": "Yorick"
     },
     {
       "name": "test",
       "link": "/",
       "image": "images/...",
       "description": "Test",
-      "author_avatar": "images/MissTheRage.png"
+      "author_avatar": "images/MissTheRage.png",
+      "author": "Yorick"
     }
   ]
 }
