@@ -1,20 +1,28 @@
 {
-  "data": [
-    {
-      "name": "iOS Notes",
-      "link": "https://www.yorick.ml/notes/",
-      "image": "images/notes_banner_dark.png",
-      "description": "Create and save notes with iOS Notes",
-      "author_avatar": "images/MissTheRage.png",
-      "author": "Yorick"
-    },
-    {
-      "name": "test",
-      "link": "/",
-      "image": "images/...",
-      "description": "Test",
-      "author_avatar": "images/MissTheRage.png",
-      "author": "Yorick"
-    }
-  ]
+    "data": [
+        {
+            "name": "iOS Notes",
+            "link": "https://www.yorick.ml/notes/",
+            "image": "https://www.yorick.ml/images/notes_banner_dark.png",
+            "author_avatar": "images/MissTheRage.png",
+            "author": "Yorick",
+            "released": true
+        },
+        {
+            "name": "EditChat",
+            "link": "",
+            "image": "",
+            "author_avatar": "images/MissTheRage.png",
+            "author": "EditChat Team",
+            "released": false
+        },
+        {
+            "name": "Roblox Vanced",
+            "link": "",
+            "image": "",
+            "author_avatar": "images/MissTheRage.png",
+            "author": "Yorick",
+            "released": false
+        }
+    ]
 }

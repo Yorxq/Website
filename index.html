@@ -1,34 +1,32 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
+    
+    <!-- meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Home - Yorick"> 
+    <meta name="description" content="welcome to yorick.ml where you can find and download apps created by yorick"> 
+    <meta name="theme-color" content="#212121">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
+    <!--Title & Fav-->
     <title>Home - Yorick</title>
     <link rel="shortcut icon" type="image/jpg" href="images/MissTheRage.png"/>
-    <meta name="title" content="Home - Yorick"> 
-    <meta name="description" content="welcome to yorick.ml where you can find and download apps created by yorick"> 
-    <meta name="theme-color" content="#212121">
-    
 
-    <style>
-        body {
-    min-height: 75rem;
-    padding-top: 4rem;
-  }
+    <!--Style / CSS-->
+    <link href="style.css" rel="stylesheet">
   
-      </style>
-
   </head>
   
+
   <body class="bg-dark">
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-black bg-opacity-25">
-        <div class="container-fluid">
+    <!--Nav-->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark p-0">
+        <div class="container-fluid bg-black bg-opacity-50 py-2">
         <a class="navbar-brand" href="">
             <img src="images/MissTheRage.png" alt="" height="36px" width="36px" class="d-inline-block align-text-top">
         </a>
@@ -42,90 +40,150 @@
                 <a class="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Apps</a>
+                <a class="nav-link active" aria-current="page" href="#apps">Apps</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Contact</a>
               </li>
             </ul>
+            <form class="d-flex px-2">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-secondary" type="submit">Search</button>
+            </form>
           </div>
         </div>
       </nav>
 
-      <main class="container-fluid m-0 p-0">
-          <section id="home">
-            <div class="px-4 py-5 my-5 text-center">
-              <img class="d-block mx-auto mb-2" src="images/MissTheRage.png" alt="" width="65" height="65">
-              <h1 class="display-5 fw-bold text-white">Yorick.ml</h1>
-              <div class="col-lg-6 mx-auto">
-                <p class="lead mb-4 text-secondary">Welcome to Yorick.ml, here you can search and download apps for a android device.</p>
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                  <a href="/notes">
-                    <button type="button" class="btn btn-secondary btn-lg px-4 gap-3">Apps</button>
-                  </a>
+    <main class="bg-dark">
+
+      <!--HOME-->
+      <section id="home" class="bg-dark">
+            <!--CAROUSEL-->
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner bg-black bg-opacity-25">
+                <div class="carousel-item active">
+                  <div class="container">
+                    <div class="carousel-caption text-start">
+                      <h1>About</h1>
+                      <p>Yorick.ml is a in website created by Yorick, Here u can download free apps from different creators.</p>
+                      <p><a class="btn btn-lg btn-secondary" href="#about">Read More</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="container">
+                    <div class="carousel-caption">
+                      <h1>Apps</h1>
+                      <p>Explore apps created by different created and be one of the first to test them!</p>
+                      <p><a class="btn btn-lg btn-secondary" href="#apps">Explore</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">     
+                  <div class="container">
+                    <div class="carousel-caption text-end">
+                      <h1>Info</h1>
+                      <p>if u have any problems using the website or any apps u can contact us.</p>
+                      <p><a class="btn btn-lg btn-secondary" href="#contact">Contact</a></p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>   
           </section>
-      </main>
 
-      <div class="container">
-        <footer class="row row-cols-5 py-5 my-5 border-top">
-          <div class="col">
-            <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-              <img src="images/MissTheRage.png" alt="" class="bi me-2" width="32" height="32">
-            </a>
-            <p class="text-muted">&copy; 2021</p>
+            <!--About-->
+            <section id="about">
+              <div class="container marketing">
+
+                <!-- Three columns of text below the carousel -->
+                <div class="row">
+                  <div class="col-lg-4">
+                    <img class="bd-placeholder-img rounded-circle mb-1" width="140" height="140" src="images/MissTheRage.png" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+            
+                    <h2>What is Yorick.ml?</h2>
+                    <p>Yorick.ml is a website where u can download Android apps created by a certain amount of creators.</p>
+                    <p><a class="btn btn-secondary" href="#">More &raquo;</a></p>
+                  </div>
+                  <div class="col-lg-4">
+                    <img class="bd-placeholder-img rounded-circle mb-1" width="140" height="140" src="images/MissTheRage.png" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+            
+                    <h2>Upload?</h2>
+                    <p>You can upload your own apps by contacting our services and tell why your application sould be on here.</p>
+                    <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                  </div>
+                  <div class="col-lg-4">
+                    <img class="bd-placeholder-img rounded-circle mb-1" width="140" height="140" src="images/MissTheRage.png" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+            
+                    <h2>Free!</h2>
+                    <p>Every app that you can download on this website are free for normal use, please do not modify the apps.</p>
+                    <p><a class="btn btn-secondary" href="#apps">View Apps &raquo;</a></p>
+                  </div>
+                </div>
+            </section>
+
+   <!--APPS-->
+   <section id="apps">
+    <div class="container px-4 py-5" id="custom-cards">
+      <h2 class="pb-2 border-bottom">Apps</h2>
+  
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+
+        <div class="col" id="apptemp">
+          <div class="card card-cover overflow-hidden text-white bg-dark rounded-5" id="image">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-3 display-6 lh-1 fw-bold textclr" id="name"></h2>
+              <ul class="d-flex list-unstyled mt-auto gravcenter">
+                <li>
+                  <img src="" alt="" width="30" height="30" class="rounded-circle" id="avatar">
+                </li>
+                <h6 id="author" class="customtxt"></h6>
+              </ul>
+            </div>
           </div>
-      
-          <div class="col">
-      
-          </div>
-      
-          <div class="col">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#home" class="nav-link p-0 text-muted">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Apps</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact</a></li>
-              <li class="nav-item mb-2"><a href="/notes" class="nav-link p-0 text-muted">Notes</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">1</a></li>
-            </ul>
-          </div>
-      
-          <div class="col">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">1</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">1</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">1</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">1</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">1</a></li>
-            </ul>
-          </div>
-      
-          <div class="col">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">1</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">1</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">1</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">1</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">1</a></li>
-            </ul>
-          </div>
-        </footer>
+        </div>
+ 
+        </div>
       </div>
+  </section>
+  
+      </main>
+      <!--END MAIN-->
 
-    <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- Bootstrap & Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
+
+    Option 2: Separate Popper and Bootstrap JS
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
     -->
+
+    <!--Script-->
+    <script>
+      const json = '{"name": "iOS Notes","link": "https://www.yorick.ml/notes/","image": "https://www.yorick.ml/images/notes_banner_dark.png","description": "Create and save notes with iOS Notes","author_avatar": "images/MissTheRage.png","author": "Yorick"}';
+      const obj = JSON.parse(json);
+
+      $('#name').html(obj.name).trigger("create");
+      $('#avatar').attr("src", obj.author_avatar);
+      $('#avatar').attr("alt", obj.author);
+      $('#image').css({'background-image': 'url(' + obj.image + ')'});
+      $('#author').html(obj.author).trigger("create");
+
+     
+    </script>
+
   </body>
 </html>
