@@ -10,7 +10,7 @@
         },
         {
             "name": "EditChat",
-            "link": "",
+            "link": "https://www.yorick.ml/images/icon.png",
             "image": "",
             "author_avatar": "images/MissTheRage.png",
             "author": "EditChat Team",
@@ -19,7 +19,7 @@
         {
             "name": "Roblox Vanced",
             "link": "",
-            "image": "",
+            "image": "https://www.yorick.ml/images/PicsArt_10-02-03.17.10.jpg",
             "author_avatar": "images/MissTheRage.png",
             "author": "Yorick",
             "released": false
